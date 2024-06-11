@@ -1,0 +1,57 @@
+main {
+  background: #24353f;
+  height: 100vh;
+}
+
+.container {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  width: 65%;
+}
+
+h1 {
+  color: #17a2b8;
+  padding-bottom: 10px;
+}
+
+input {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+input::placeholder {
+  color: #ced4dacf !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  caret-color: #ced4da;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.form-control.is-valid{
+    background-image: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  color : white !important;
+  -webkit-text-fill-color: white !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}

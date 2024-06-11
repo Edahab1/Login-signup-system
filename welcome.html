@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Welcome Page</title>
+
+    <style>
+        main{
+            height: 100vh;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="d-flex justify-content-center align-items-center">
+        <div id="welcome" class="welcome p-5 text-center">
+            <h1>Welcome, <span id="name"></span></h1>
+            <a href="login.html" class="text-decoration-none text-white">Log out</a>
+        </div>
+    </main>
+    
+
+    <script src="./JS/index.js"></script>
+    <script src="./JS/login.js"></script>
+    <script>
+      const CurrentUser = JSON.parse(localStorage.getItem("currentUser"))
+      welcome.innerHTML = `
+        <h1 class="text-capitalize">welcome, ${CurrentUser.username}</h1>
+        <a href="login.html" class="text-decoration-none text-white">Log out</a>`
+    //   redirect to the welcome page
+    </script>
+</body>
+</html>
